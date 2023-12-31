@@ -1,0 +1,78 @@
+﻿.Content1 {
+    display: flex;
+    flex-direction: row;
+    height:auto;
+}
+
+.c-right {
+    width: 1100px;
+    height: auto;
+    /* background-color: cyan; */
+    /*border: 1px solid;*/
+    
+}
+
+.itemProduct1 {
+    width: 210px;
+    height: 350px;
+    border: 1px solid;
+    margin: 0px 10px 10px 0px;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    flex-direction: column;
+    border-radius:10px;
+}
+
+.picProduct1 {
+    width: 190px;
+    height: 190px;
+    /* background-color: aqua; */
+}
+
+.HangSX1 {
+    font-size: 18px;
+    margin: 15px 0px;
+}
+
+.nameProduct1 {
+    margin: 5px 0px;
+    font-size: 18px;
+}
+
+.c-left {
+    width: 300px;
+    height: auto;
+    /*background-color: red;*/
+}
+
+.dsThuongHieu {
+    width: 100%;
+    height: 200px;
+    /*background-color: aquamarine;*/
+}
+
+.c-left h2 {
+    padding: 10px 0px 0px 0px;
+    text-align: center;
+    margin: 0px;
+}
+
+.dsGioiTinh {
+    width: 100%;
+    height: 100px;
+    /*background-color: bisque;*/
+    
+}
+
+.dsMua {
+    width: 100%;
+    height: 130px;
+    /*background-color: blue;*/
+}
+
+.dsGiaTien {
+    width: 100%;
+    height: 150px;
+    /*background-color: yellow;*/
+}

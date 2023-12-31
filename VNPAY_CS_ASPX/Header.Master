@@ -1,0 +1,221 @@
+﻿  <%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Header.Master.cs" Inherits="PJWebNC.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    
+    <asp:ContentPlaceHolder ID="tieude" runat="server"></asp:ContentPlaceHolder>
+    <link href="Header.css" rel="stylesheet" />
+    <title></title>
+    <link href="Footer.css" rel="stylesheet" />
+    <link rel="icon" href="Icon/perfume.png"  />
+    <style>
+        .active1 {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+    
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="Container p-0">
+            
+                <!-- header -->
+            <div class="Header" style="padding-left: 0px; padding-right: 0px;">
+                <!-- DanhMuc -->
+                <div class="DanhMuc p-0 ps-5">
+
+                    <ul style="display: flex; flex-direction: row; margin: 0px;" class="p-0">
+                        <li class="itemDanhMuc p-0 mx-2"><a href="default.aspx">Trang chủ</a></li>
+                        <li class="itemDanhMuc p-0 mx-2"><a href="GioiThieu.aspx">Giới thiệu</a></li>
+                        <li class="itemDanhMuc p-0 mx-2"><a href="#">Thương hiệu</a></li>
+                        <li class="itemDanhMuc p-0 mx-2"><a href="DanhSach.aspx?id=0">Sản phẩm</a></li>
+                        <li class="itemDanhMuc p-0 mx-2"><a href="Blog.aspx">Blog</a></li>
+                    </ul>
+
+                </div>
+                <!-- end DanhMuc -->
+
+                <!-- Icon -->
+                <div class="logoHead">
+                    <a href="default.aspx">
+                        <img src="https://xxivstore.com/wp-content/themes/yootheme/cache/XXIV-Logo-Web-da8bec8c.webp" alt="" class="iconWeb"></a>
+                </div>
+                <!-- end Icon -->
+
+
+                <!-- ChucNang -->
+                <div class="ChucNang p-0 ">
+                    <ul style="display: flex; flex-direction: row; margin: 0px;" class="p-0">
+                        <a href="QLyTaiKhoan.aspx">
+                            <li class="itemChucNang p-0">
+                                <img src="../Icon/User.png" alt=""></li>
+                        </a>
+
+                        <a href="GioHang.aspx?id=<%Response.Write(Session["UserID"]); %>">
+                            <li class="itemChucNang p-0">
+                                <img src="../Icon/cart.png" alt=""></li>
+                        </a>
+                    </ul>
+                </div>
+                <!-- end ChucNang -->
+            </div>
+                <!-- end header -->
+            <asp:ContentPlaceHolder ID="noidung" runat="server"></asp:ContentPlaceHolder>
+                <!-- Footer -->
+                <div class="Footer">
+                    <!-- Contact -->
+                    <div class="Contact">
+                        <ul class="p-0">
+                            <li class="p-0">
+                                <a href="#">
+                                    <img src="../Icon/instagram.png" alt="">
+                                </a>
+                            </li>
+                            <li class="p-0">
+                                <a href="#">
+                                    <img src="../Icon/facebook.png" alt="">
+                                </a>
+                            </li>
+                            <li class="p-0">
+                                <a href="#">
+                                    <img src="../Icon/youtube.png" alt="">
+                                </a>
+                            </li>
+                            <li class="p-0">
+                                <a href="#">
+                                    <img src="../Icon/diachi.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End contact -->
+
+                    <!-- Support -->
+                    <div class="Support">
+                        <!-- store -->
+                        <div class="store">
+                            <ul>
+                                <li style="margin-bottom: 21px; font-size: 31px;">
+                        
+                                        xxiv store
+                        
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Ưu đãi thanh viên
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Tài khoản
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Tuyển dụng
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- store -->
+
+                        <!-- chinh sach -->
+                        <div class="store">
+                            <ul>
+                                <li style="margin-bottom: 21px; font-size: 31px;">
+                        
+                                        Chính sách bán hàng
+                        
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Phương thức vận chuyển
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                    Câu hỏi thường gặp
+                                </a></li>
+                                <li><a href="#">
+                                    Điều khoản và điều kiện sử dụng
+                                </a></li>
+                                <li><a href="#">
+                                    Điều khoản và điều kiện bán hàng
+                                </a></li>
+                                <li><a href="#">
+                                    Thông báo pháp lý
+                                </a></li>
+                            </ul>
+                        </div>
+                        <!-- chinh sach -->
+
+                        <!-- thong tin -->
+                        <div class="store">
+                            <ul>
+                                <li style="margin-bottom: 21px; font-size: 31px;">
+                        
+                                        Thông tin chung
+                        
+                                </li>
+                                <li>
+                                    <a href="GioiThieu.aspx">
+                                        Giới thiệu
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Blog.aspx">
+                                        Blog
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Liên hệ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="DanhSach.aspx">
+                                        Sản phẩm
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- thong tin -->
+
+                    </div>
+                    <!-- End support -->
+
+                    <!-- copy -->
+                    <div class="copy">
+                        © xxiv 2021 | all right reserved
+                    </div>
+                </div>
+                <!-- End footer -->
+            <script>
+                // Lấy đường dẫn của trang hiện tại
+                var path = window.location.pathname;
+
+                // Lặp qua tất cả các thẻ li trong danh sách menu
+                var menuItems = document.querySelectorAll('.itemDanhMuc');
+                for (var i = 0; i < menuItems.length; i++) {
+                    var menuItem = menuItems[i];
+
+                    // Lấy href của thẻ a bên trong thẻ li
+                    var href = menuItem.querySelector('a').getAttribute('href');
+
+                    // So sánh href với đường dẫn của trang hiện tại
+                    if (href === path) {
+                        // Nếu trùng, thêm lớp CSS active vào thẻ li
+                        menuItem.classList.add('active1');
+                    } else {
+                        // Nếu khác, loại bỏ lớp CSS active khỏi thẻ li (nếu có)
+                        menuItem.classList.remove('active1');
+                    }
+                }
+            </script>
+        </div>
+    </form>
+</body>
+</html>
